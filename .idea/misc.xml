@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../coding-270" />
     <file type="web" url="file://$PROJECT_DIR$" />
+    <file type="web" url="file://$PROJECT_DIR$/../sisp_gdmi_manager" />
     <file type="web" url="file://$PROJECT_DIR$/../sisp_salary_supervision" />
   </component>
   <component name="MavenProjectsManager">
@@ -12,6 +13,7 @@
         <option value="$PROJECT_DIR$/../sisp_salary_supervision/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../coding-270/pom.xml" />
+        <option value="$PROJECT_DIR$/../sisp_gdmi_manager/pom.xml" />
       </list>
     </option>
   </component>
@@ -21,6 +23,13 @@
   <component name="SvnBranchConfigurationManager">
     <option name="myConfigurationMap">
       <map>
+        <entry key="$PROJECT_DIR$/../sisp_gdmi_manager">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn://192.168.8.125/BusinessSystem/sisp_gdmi_manager" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../sisp_salary_supervision">
           <value>
             <SvnBranchConfiguration>

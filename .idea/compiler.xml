@@ -6,13 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sispmanager" />
-        <module name="design_pattern (1)" />
-        <module name="design_pattern" />
+        <module name="sisp_gdmi_manager" />
+        <module name="coding-270" />
+        <module name="sisp_salary_supervision" />
+        <module name="design_patterns" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="design_patterns" target="1.6" />
-    </bytecodeTargetLevel>
   </component>
 </project>
