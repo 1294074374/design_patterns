@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../booth" />
     <file type="web" url="file://$PROJECT_DIR$/../coding-270" />
     <file type="web" url="file://$PROJECT_DIR$" />
+    <file type="web" url="file://$PROJECT_DIR$/../sisp_gdmi" />
     <file type="web" url="file://$PROJECT_DIR$/../sisp_gdmi_manager" />
+    <file type="web" url="file://$PROJECT_DIR$/../sisp_gdmi_wx" />
     <file type="web" url="file://$PROJECT_DIR$/../sisp_salary_supervision" />
+    <file type="web" url="file://$PROJECT_DIR$/../sispmanager_base" />
+    <file type="web" url="file://$PROJECT_DIR$/../sispmanager_unionpay" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -14,6 +19,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../coding-270/pom.xml" />
         <option value="$PROJECT_DIR$/../sisp_gdmi_manager/pom.xml" />
+        <option value="$PROJECT_DIR$/../sispmanager_base/pom.xml" />
+        <option value="$USER_HOME$/Desktop/开发包/mybatis generator demo/custom-mbg-comment-generator-master/mbg/pom.xml" />
+        <option value="$PROJECT_DIR$/../sispmanager_unionpay/pom.xml" />
+        <option value="$PROJECT_DIR$/../sisp_gdmi/pom.xml" />
+        <option value="$PROJECT_DIR$/../sisp_gdmi_wx/pom.xml" />
       </list>
     </option>
   </component>

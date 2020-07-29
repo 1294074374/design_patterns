@@ -2,7 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../sisp_gdmi" vcs="svn" />
     <mapping directory="$PROJECT_DIR$/../sisp_gdmi_manager" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../sisp_gdmi_wx" vcs="svn" />
     <mapping directory="$PROJECT_DIR$/../sisp_salary_supervision" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../sispmanager_base" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../sispmanager_unionpay" vcs="svn" />
   </component>
 </project>

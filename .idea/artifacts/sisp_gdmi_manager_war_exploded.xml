@@ -1,6 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="sisp_gdmi_manager:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/sisp_gdmi_manager_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/../sisp_gdmi_manager/target/webapptpl</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>sisp_gdmi_manager</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -79,6 +86,9 @@
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.6.12" />
           <element id="library" level="project" name="Maven: org.dom4j:dom4j:2.1.1" />
         </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../sisp_gdmi_manager/target/webapptpl/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="sisp_gdmi_manager/web/Web" />
     </root>
