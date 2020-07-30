@@ -1,6 +1,10 @@
 package com.geely.design.pattern.creational.creational.单例模式;
 
 
+import com.geely.design.pattern.creational.creational.单例模式.饿汉式.HungrySingleton;
+
+import java.io.*;
+
 /**
  * 单例模式
  *
@@ -21,9 +25,38 @@ package com.geely.design.pattern.creational.creational.单例模式;
  *      1.私有构造器：禁止外部类调用构造函数创建对象
  *      2.线程安全：所有线程拿到的实例是同一个
  *      3.延迟加载：使用它时才创建
- *      4.序列化和反序列化安全：
+ *      4.序列化和反序列化安全：（面试加分项）
+ *          Java序列化就是指把Java对象转换为字节序列的过程
+ *          Java反序列化就是指把字节序列恢复为Java对象的过程。
+ *      5.反射（面试加分项）
  *
+ * 破坏单例模式（面试加分）
+ *      1.序列化和反序列化
  *
  */
 public class Test {
+
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
+        // 测试序列化破坏单例模式
+        checkSerializable();
+
+
+    }
+
+    private static void checkSerializable() throws IOException, ClassNotFoundException {
+        HungrySingleton hungrySingleton = HungrySingleton.getInstance();
+        //序列化并写出文件
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("singleton_file"));
+        oos.writeObject(hungrySingleton);
+
+        File file = new File("singleton_file");
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file));
+
+        //反序列化
+        HungrySingleton newHungrySingleton = (HungrySingleton) ois.readObject();
+
+        System.out.println(hungrySingleton);
+        System.out.println(newHungrySingleton);
+        System.out.println(hungrySingleton == newHungrySingleton);
+    }
 }
