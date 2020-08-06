@@ -5,6 +5,8 @@ import com.geely.design.pattern.creational.creational.单例模式.懒汉式.Laz
 import com.geely.design.pattern.creational.creational.单例模式.枚举.EnumInstance;
 import com.geely.design.pattern.creational.creational.单例模式.静态内部类.StaticInnerClassSingleton;
 import com.geely.design.pattern.creational.creational.单例模式.饿汉式.HungrySingleton;
+import org.apache.ibatis.executor.ErrorContext;
+import org.springframework.beans.factory.config.AbstractFactoryBean;
 
 import java.io.*;
 import java.lang.reflect.Constructor;
@@ -37,15 +39,23 @@ import java.lang.reflect.InvocationTargetException;
  *
  * 破坏单例模式（面试加分）
  *      1.序列化和反序列化
+ *      2.反射
  *
+ * 例子
+ * JDK：
+ *      1.java.lang.RunTime.getRunTime() 属于饿汉式
+ *      2.java.awt.Desktop.getDesktop() 属于懒汉式，容器单例  有synchronize关键字同步
+ * Spring（给予容器）
+ *      1.org.springframework.beans.factory.config.AbstractFactoryBean.getObject() 属于懒汉式
+ * iBatis
+ *      1.org.apache.ibatis.executor.ErrorContext.instance()
  */
 public class Test {
-
     public static void main(String[] args) throws IOException, ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
         // 测试序列化破坏单例模式
        // checkSerializable();
 
-        // 反射共计破话单例模式
+        // 反射共计破坏单例模式
         // checkReflect();
 
         // 枚举类型的序列化机制破解
