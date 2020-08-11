@@ -6,17 +6,35 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sisp_gdmi" />
-        <module name="sisp_gdmi_manager" />
-        <module name="mbg" />
-        <module name="sispmanager_unionpay" />
-        <module name="coding-270" />
-        <module name="design_patterns" />
-        <module name="sisp_gdmi_wx" />
         <module name="sispmanager_base" />
+        <module name="mbg" />
+        <module name="file" />
+        <module name="sisp_gdmi_wx" />
+        <module name="sispmanager_unionpay" />
+        <module name="sisp_gdmi" />
+        <module name="gateway" />
         <module name="sisp_salary_supervision" />
+        <module name="business" />
+        <module name="server" />
+        <module name="generator" />
+        <module name="eureka" />
+        <module name="coding-270" />
+        <module name="sisp_gdmi_manager" />
+        <module name="system" />
+        <module name="design_patterns" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="business" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="file" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="generator" options="-parameters" />
+      <module name="server" options="-parameters" />
+      <module name="system" options="-parameters" />
+    </option>
   </component>
 </project>

@@ -24,6 +24,7 @@
         <option value="$PROJECT_DIR$/../sispmanager_unionpay/pom.xml" />
         <option value="$PROJECT_DIR$/../sisp_gdmi/pom.xml" />
         <option value="$PROJECT_DIR$/../sisp_gdmi_wx/pom.xml" />
+        <option value="$PROJECT_DIR$/../course/pom.xml" />
       </list>
     </option>
   </component>
@@ -33,6 +34,13 @@
   <component name="SvnBranchConfigurationManager">
     <option name="myConfigurationMap">
       <map>
+        <entry key="$PROJECT_DIR$/../sisp_gdmi">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn://192.168.8.125/SISP/SISP/code/sisp_gdmi" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../sisp_gdmi_manager">
           <value>
             <SvnBranchConfiguration>
@@ -40,10 +48,31 @@
             </SvnBranchConfiguration>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../sisp_gdmi_wx">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn://192.168.8.125/SISP/SISP/code/sisp_gdmi_wx" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../sisp_salary_supervision">
           <value>
             <SvnBranchConfiguration>
               <option name="trunkUrl" value="svn://192.168.8.125/BusinessSystem/sisp_salary_supervision/sisp_salary_supervision" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sispmanager_base">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn://192.168.8.125/BusinessSystem/sispmanager_base" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sispmanager_unionpay">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn://192.168.8.125/BusinessSystem/sispmanager2" />
             </SvnBranchConfiguration>
           </value>
         </entry>
