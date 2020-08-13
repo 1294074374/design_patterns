@@ -8,28 +8,25 @@ import com.geely.design.pattern.structural.代理模式.db.DataSourceContextHold
 public class OrderServiceStaticProxy {
     private IOrderService iOrderService;
 
-    private void beforeMethod() {
-        System.out.println("静态代理 beforeCode");
+    public int saveOrder(Order order) {
+        beforeMethod(order);
+        iOrderService = new OrderServiceImpl();
+        int result = iOrderService.saveOrder(order);
+        afterMethod();
+        return result;
     }
 
-    int saveOrder(Order order) {
-        beforeMethod();
-        iOrderService = new OrderServiceImpl();
+    private void beforeMethod(Order order) {
         int userId = order.getUserId();
         int dbRouter = userId % 2;
-
-        // 设置DataSource
-        DataSourceContextHolder.setDBType(String.valueOf(dbRouter));
-
         System.out.println("静态代理分配到【db" + dbRouter + "】处理数据");
-        afterMethod();
-        return iOrderService.saveOrder(order);
-    }
 
+        //todo 设置dataSource;
+        DataSourceContextHolder.setDBType("db" + String.valueOf(dbRouter));
+        System.out.println("静态代理 before code");
+    }
 
     private void afterMethod() {
-        System.out.println("静态代理 afterCode");
+        System.out.println("静态代理 after code");
     }
-
-
 }

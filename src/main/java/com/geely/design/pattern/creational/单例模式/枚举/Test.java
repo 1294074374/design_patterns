@@ -13,4 +13,13 @@ package com.geely.design.pattern.creational.单例模式.枚举;
  * （类似饿汉式）
  */
 public class Test {
+    public static void main(String[] args) {
+        EnumInstance enumInstance1 = EnumInstance.getInstance();
+        EnumInstance enumInstance2 = EnumInstance.getInstance();
+        enumInstance1.setData(new Object());
+        System.out.println(enumInstance1.getData());
+        System.out.println(enumInstance2.getData());
+        System.out.println(enumInstance1);
+        System.out.println(enumInstance2);
+    }
 }
