@@ -1,5 +1,8 @@
 package com.geely.design.pattern.structural.适配器模式;
 
+/**
+ * @author laijunlin
+ */
 public class PowerAdapter implements DC5{
     private AC220 ac220 = new AC220();
 

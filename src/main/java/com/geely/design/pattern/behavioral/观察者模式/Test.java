@@ -20,8 +20,10 @@ public class Test {
     public static void main(String[] args) {
         Course course= new Course("java设计模式");
         Teacher teacher = new Teacher("Alpha");
+        Teacher teacher2 = new Teacher("Caesar");
         // 添加观察者
         course.addObserver(teacher);
+        course.addObserver(teacher2);
         //业务逻辑代码
         Question question = new Question();
         question.setUserName("test");
